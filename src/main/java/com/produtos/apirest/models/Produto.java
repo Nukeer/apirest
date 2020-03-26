@@ -21,6 +21,12 @@ public class Produto implements Serializable {
 	
 	private String nome;
 
+	private BigDecimal quantidade;
+	
+	private BigDecimal valor;
+	
+	private boolean isService;
+
 	public long getId() {
 		return id;
 	}
@@ -53,8 +59,12 @@ public class Produto implements Serializable {
 		this.valor = valor;
 	}
 
-	private BigDecimal quantidade;
-	
-	private BigDecimal valor;
+	public boolean isService() {
+		return isService;
+	}
+
+	public void setService(boolean isService) {
+		this.isService = isService;
+	}
 	
 }
